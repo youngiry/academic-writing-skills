@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" role="img" aria-labelledby="description">
+  <desc id="description">合成流程示例：材料经核对进入汇总，发现差异则修正并返回核对。方框表示动作，箭头表示流转方向。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 Z" fill="#333333"/>
+    </marker>
+  </defs>
+  <rect width="900" height="430" fill="#FFFFFF"/>
+  <g fill="none" stroke="#333333" stroke-width="2" marker-end="url(#arrow)">
+    <path id="e1" data-source="material" data-target="check" d="M 245 160 H 365"/>
+    <path id="e2" data-source="check" data-target="summary" d="M 535 160 H 660"/>
+    <path id="e3" data-source="check" data-target="revise" d="M 450 200 V 285"/>
+    <path id="e4" data-source="revise" data-target="check" d="M 535 325 H 590 V 235 H 495 V 200"/>
+  </g>
+  <g fill="#F3F3F3" stroke="#333333" stroke-width="2">
+    <rect id="material" x="75" y="120" width="170" height="80"/>
+    <rect id="check" x="365" y="120" width="170" height="80"/>
+    <rect id="summary" x="660" y="120" width="170" height="80"/>
+    <rect id="revise" x="365" y="285" width="170" height="80"/>
+  </g>
+  <g fill="#222222" font-family="sans-serif" font-size="26" text-anchor="middle">
+    <text id="label-material" x="160" y="169">材料</text>
+    <text id="label-check" x="450" y="169">核对</text>
+    <text id="label-summary" x="745" y="169">汇总</text>
+    <text id="label-revise" x="450" y="334">修正</text>
+  </g>
+  <g fill="#333333" font-family="sans-serif" font-size="19" text-anchor="middle">
+    <text id="label-ok" x="595" y="147">一致</text>
+    <text id="label-difference" x="400" y="249">有差异</text>
+  </g>
+</svg>

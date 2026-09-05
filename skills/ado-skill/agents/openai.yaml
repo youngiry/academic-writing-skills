@@ -1,0 +1,4 @@
+interface:
+  display_name: "ADO 论证诊断"
+  short_description: "面向段落功能、逻辑衔接、概念关系与引文用途的学术修改"
+  default_prompt: "使用 $ado-skill 按我本次任务处理材料，保留必要证据与已选定表达。"
