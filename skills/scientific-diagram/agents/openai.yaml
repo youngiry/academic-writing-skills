@@ -1,0 +1,4 @@
+interface:
+  display_name: "科学绘图"
+  short_description: "先核对文字、关系与数据，再绘制可编辑的学术机制与模型图"
+  default_prompt: "使用 $scientific-diagram 按我本次任务处理材料，保留必要证据与已选定表达。"

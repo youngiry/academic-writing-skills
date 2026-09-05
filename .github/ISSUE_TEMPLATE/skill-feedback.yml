@@ -1,0 +1,46 @@
+name: 技能反馈与改进
+description: 用脱敏或合成最小示例描述问题
+title: "[反馈] "
+body:
+  - type: markdown
+    attributes:
+      value: "请勿上传私人稿件、个人信息、凭据或受限材料。无需完整对话或全文。"
+  - type: input
+    id: skill_version
+    attributes:
+      label: 技能与版本
+      placeholder: "ado-skill，0.1.0"
+    validations:
+      required: true
+  - type: textarea
+    id: task
+    attributes:
+      label: 任务场景
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 预期行为
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: 实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 脱敏或合成最小示例
+      description: 仅保留说明问题必需的短段或步骤，可说明无法提供示例的原因。
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: 必要的模型或运行环境信息
+      description: 只填与复现有关的信息，删除账户、私有路径和日志中的敏感内容。
+    validations:
+      required: false

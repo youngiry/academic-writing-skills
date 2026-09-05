@@ -1,0 +1,4 @@
+interface:
+  display_name: "论文修改偏好"
+  short_description: "按当前任务调整写作偏好、保留采用表达并追溯实际修改反馈"
+  default_prompt: "使用 $paper-revision-prefs 按我本次任务处理材料，保留必要证据与已选定表达。"

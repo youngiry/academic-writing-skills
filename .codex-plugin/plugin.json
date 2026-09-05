@@ -1,0 +1,24 @@
+{
+  "name": "academic-writing-skills",
+  "version": "0.1.0",
+  "description": "独立使用的论证诊断、修改偏好与科学绘图技能。",
+  "author": {
+    "name": "youngiry"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Academic Writing Skills",
+    "shortDescription": "独立使用的论证诊断、修改偏好与科学绘图技能。",
+    "longDescription": "独立使用的论证诊断、修改偏好与科学绘图技能。",
+    "developerName": "youngiry",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "根据任务选择 ADO、论文修改偏好或科学绘图技能。"
+    ]
+  },
+  "license": "MIT"
+}

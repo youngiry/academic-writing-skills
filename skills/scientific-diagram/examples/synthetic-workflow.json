@@ -1,0 +1,19 @@
+{
+  "kind": "synthetic",
+  "description": "合成流程，无真实数据，无因果推断。",
+  "labels": {
+    "label-material": "材料",
+    "label-check": "核对",
+    "label-summary": "汇总",
+    "label-revise": "修正",
+    "label-ok": "一致",
+    "label-difference": "有差异"
+  },
+  "edges": {
+    "e1": ["material", "check"],
+    "e2": ["check", "summary"],
+    "e3": ["check", "revise"],
+    "e4": ["revise", "check"]
+  },
+  "caption": "合成流程示例。材料经核对进入汇总，发现差异则修正并返回核对。所有节点和关系为方法演示而设。"
+}
